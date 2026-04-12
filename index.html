@@ -602,6 +602,29 @@
       line-height: 1.45;
     }
 
+    /* ─── Map Links ─── */
+    a.map-link {
+      color: inherit;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      transition: color 0.2s ease;
+    }
+    a.map-link::after {
+      content: '📍';
+      font-size: 0.78em;
+      opacity: 0.6;
+      transition: opacity 0.2s ease, transform 0.2s ease;
+    }
+    a.map-link:hover { color: var(--coral); }
+    a.map-link:hover::after { opacity: 1; transform: scale(1.2); }
+
+    /* Map link inside snack tags */
+    .snack-tag a.map-link { color: inherit; }
+    .snack-tag a.map-link:hover { color: var(--coral-dark); }
+    .snack-tag a.map-link::after { font-size: 0.72em; }
+
     .snack-list {
       display: flex;
       flex-wrap: wrap;
@@ -777,7 +800,7 @@
           <div class="tl-body">
             <div class="tl-meta">
               <span class="tl-time">08:00</span>
-              <span class="tl-place highlight">Comodo Nha Trang Hotel</span>
+              <span class="tl-place highlight"><a class="map-link" href="https://maps.app.goo.gl/2pUVbvmvkcfgTjpU6" target="_blank" rel="noopener">Comodo Nha Trang Hotel</a></span>
             </div>
             <p class="tl-note">Đến trung tâm, gửi đồ – chờ phòng, freshen up sau chuyến đi dài.</p>
           </div>
@@ -791,7 +814,7 @@
           <div class="tl-body">
             <div class="tl-meta">
               <span class="tl-time">08:30</span>
-              <span class="tl-place highlight">Bánh Căn 51</span>
+              <span class="tl-place highlight"><a class="map-link" href="https://maps.app.goo.gl/g6wAs7sYMV2qWGjF7" target="_blank" rel="noopener">Bánh Căn 51</a></span>
             </div>
             <p class="tl-note">Ăn sáng đặc sản Nha Trang – bánh căn giòn thơm, chấm mắm nhĩ trứng cút.</p>
           </div>
@@ -819,7 +842,7 @@
           <div class="tl-body">
             <div class="tl-meta">
               <span class="tl-time">09:30</span>
-              <span class="tl-place highlight">Viện Hải dương học Nha Trang</span>
+              <span class="tl-place highlight"><a class="map-link" href="https://maps.app.goo.gl/LgVqq6WannTMR4PA7" target="_blank" rel="noopener">Viện Hải dương học Nha Trang</a></span>
             </div>
             <p class="tl-note">Tham quan ~1 tiếng – bể cá, sinh vật biển độc đáo. Đi sớm buổi sáng → đỡ đông người.</p>
           </div>
@@ -833,7 +856,7 @@
           <div class="tl-body">
             <div class="tl-meta">
               <span class="tl-time">10:45</span>
-              <span class="tl-place highlight">Bờ kè Làng Chụt</span>
+              <span class="tl-place highlight"><a class="map-link" href="https://maps.app.goo.gl/RLzmYBvVR5gaJFv89" target="_blank" rel="noopener">Bờ kè Làng Chụt</a></span>
             </div>
             <p class="tl-note">Chill nhẹ bên biển, hít gió buổi sáng trong lành, chụp vài bức ảnh phong cảnh đẹp.</p>
           </div>
@@ -847,7 +870,7 @@
           <div class="tl-body">
             <div class="tl-meta">
               <span class="tl-time">12:00</span>
-              <span class="tl-place highlight">Cơm Gà 41 Âu Cơ</span>
+              <span class="tl-place highlight"><a class="map-link" href="https://maps.app.goo.gl/AeXj5QNDDjbvg9JLA" target="_blank" rel="noopener">Cơm Gà 41 Âu Cơ</a></span>
             </div>
             <p class="tl-note">Ăn trưa cơm gà Nha Trang nổi tiếng – cơm vàng thơm, gà mềm ngọt, nước dùng đậm đà.</p>
           </div>
@@ -861,7 +884,7 @@
           <div class="tl-body">
             <div class="tl-meta">
               <span class="tl-time">13:00</span>
-              <span class="tl-place highlight">Comodo Nha Trang Hotel</span>
+              <span class="tl-place highlight"><a class="map-link" href="https://maps.app.goo.gl/2pUVbvmvkcfgTjpU6" target="_blank" rel="noopener">Comodo Nha Trang Hotel</a></span>
             </div>
             <p class="tl-note">Check-in phòng chính thức.</p>
           </div>
@@ -904,7 +927,7 @@
             <div class="highlight-badge">⭐ Highlight của ngày</div>
             <div class="tl-meta">
               <span class="tl-time">16:15</span>
-              <span class="tl-place highlight">Hang Heo Nha Trang</span>
+              <span class="tl-place highlight"><a class="map-link" href="https://maps.app.goo.gl/76WPVQbZuao29m55A" target="_blank" rel="noopener">Hang Heo Nha Trang</a></span>
             </div>
             <div class="sub-timeline">
               <div class="sub-tl-row">
@@ -971,7 +994,7 @@
           <div class="tl-body">
             <div class="tl-meta">
               <span class="tl-time">18:45</span>
-              <span class="tl-place highlight">Thanh Sương Seafood Restaurant</span>
+              <span class="tl-place highlight"><a class="map-link" href="https://maps.app.goo.gl/8uR5K8jHDmypWjo37" target="_blank" rel="noopener">Thanh Sương Seafood Restaurant</a></span>
             </div>
             <p class="tl-note">Ăn tối hải sản tươi – ghẹ rang me, tôm hùm, nghêu hấp sả. Đặt bàn trước khi đến.</p>
           </div>
@@ -985,7 +1008,7 @@
           <div class="tl-body">
             <div class="tl-meta">
               <span class="tl-time">20:30</span>
-              <span class="tl-place highlight">Ola Cafe</span>
+              <span class="tl-place highlight"><a class="map-link" href="https://maps.app.goo.gl/1XD1PmRec7tLxDev5" target="_blank" rel="noopener">Ola Cafe</a></span>
             </div>
             <p class="tl-note">Cafe chill ven biển, nhạc acoustic, ngắm đêm Nha Trang lung linh ánh đèn.</p>
           </div>
@@ -1002,9 +1025,9 @@
               <span class="tl-place">Ăn vặt đêm <span style="font-size:0.75rem;color:var(--text-light);font-weight:400;">(optional)</span></span>
             </div>
             <div class="snack-list">
-              <span class="snack-tag">🥛 Sữa quýt Phạm Hồng Thái</span>
-              <span class="snack-tag">🌯 Chả cuốn Lạc Thiện</span>
-              <span class="snack-tag">🍖 Nem nướng Hồng Vũ</span>
+              <span class="snack-tag">🥛 <a class="map-link" href="https://maps.app.goo.gl/q64xn51yodfMuePq5" target="_blank" rel="noopener">Sữa quýt Phạm Hồng Thái</a></span>
+              <span class="snack-tag">🌯 <a class="map-link" href="https://maps.app.goo.gl/mTT5BV9P78zkH2fr9" target="_blank" rel="noopener">Chả cuốn Lạc Thiện</a></span>
+              <span class="snack-tag">🍖 <a class="map-link" href="https://maps.app.goo.gl/ya1Vb5JkGewpRh7z6" target="_blank" rel="noopener">Nem nướng Hồng Vũ</a></span>
             </div>
           </div>
         </div>
@@ -1079,7 +1102,7 @@
           <div class="tl-body">
             <div class="tl-meta">
               <span class="tl-time">08:15</span>
-              <span class="tl-place highlight">Vinpearl Harbour</span>
+              <span class="tl-place highlight"><a class="map-link" href="https://share.google/I4vMojcoiwCiGH7WW" target="_blank" rel="noopener">Vinpearl Harbour</a></span>
             </div>
             <p class="tl-note">Đến cảng, làm thủ tục, chuẩn bị sang đảo Hòn Tre.</p>
           </div>
